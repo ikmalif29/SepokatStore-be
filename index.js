@@ -30,7 +30,7 @@ app.use(express.json());
 
 // Rute API
 app.use("/api/", productsRouter);
-app.use("/api/", usersRouter);
+app.use("/api", usersRouter);
 app.use("/api/", cartRouter);
 app.use("/api/", buyProductRouter);
 app.use("/api/", historyRouter);
