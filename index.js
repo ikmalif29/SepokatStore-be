@@ -14,7 +14,7 @@ const app = express();
 // Konfigurasi CORS untuk hanya mengizinkan domain frontend
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173","https://sepokat-store-fe-ka8p.vercel.app/"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Metode yang diizinkan
     allowedHeaders: ["Content-Type", "Authorization"], // Header yang diizinkan
     credentials: true, // Izinkan pengiriman cookies atau kredensial jika diperlukan
