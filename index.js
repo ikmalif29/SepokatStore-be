@@ -36,9 +36,9 @@ app.use("/api/", buyProductRouter);
 app.use("/api/", historyRouter);
 
 // Menangani rute yang tidak ditemukan
-app.use((req, res) => {
-  res.status(404).json({ error: "Route not found" });
-});
+// app.use((req, res) => {
+//   res.status(404).json({ error: "Route not found" });
+// });
 
 // Menangani error server
 app.use((err, req, res, next) => {
